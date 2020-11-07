@@ -1,29 +1,9 @@
 {
   "posts": [
     {
-      "id": 1,
-      "title": "Post One",
-      "body": "This is post one"
-    },
-    {
-      "id": 2,
-      "title": "Post Two",
-      "body": "This is post two"
-    },
-    {
-      "id": 3,
-      "title": "Post Three",
-      "body": "This is post three"
-    },
-    {
       "title": "Hello",
       "body": "Been drinking the whole night feel like shit trying to do some coding",
       "id": 4
-    },
-    {
-      "title": "Post 4",
-      "body": "Gonna have a small tea break",
-      "id": 5
     }
   ]
 }
