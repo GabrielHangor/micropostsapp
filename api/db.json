@@ -4,6 +4,16 @@
       "title": "Hello",
       "body": "Been drinking the whole night feel like shit trying to do some coding",
       "id": 4
+    },
+    {
+      "title": "Post two",
+      "body": "Gavno zhopa pizda",
+      "id": 5
+    },
+    {
+      "title": "Post three",
+      "body": "Hello my name is John Doe i am from New Zealand and i eat sushi",
+      "id": 6
     }
   ]
 }
