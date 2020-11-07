@@ -1,15 +1,15 @@
 class UI {
-  constructor () {
-    this.post = document.querySelector('#posts');
-    this.titleInput = document.querySelector('#title')
-    this.bodyInput = document.querySelector('#body')
-    this.idInput = document.querySelector('#id')
-    this.postSubmit = document.querySelector('.post-submit')
-    this.forState = 'add';
+  constructor() {
+    this.post = document.querySelector("#posts");
+    this.titleInput = document.querySelector("#title");
+    this.bodyInput = document.querySelector("#body");
+    this.idInput = document.querySelector("#id");
+    this.postSubmit = document.querySelector(".post-submit");
+    this.forState = "add";
   }
 
   showPosts(posts) {
-    let output = '';
+    let output = "";
 
     posts.forEach((post) => {
       output += `
@@ -25,11 +25,41 @@ class UI {
       </a>
       </div>
       </div>
-      `
-    })
+      `;
+    });
 
     this.post.innerHTML = output;
+  }
 
+  showAlert(message, className) {
+    this.clearAlert();
+    // Creating a div for the alert
+    const div = document.createElement("div");
+    div.className = className;
+    div.appendChild(document.createTextNode(message));
+    // Parent container
+    const container = document.querySelector(".postsContainer");
+    // Posts container
+    const posts = document.querySelector("#posts");
+    // Insert div alert
+    container.insertBefore(div, posts);
+
+    setTimeout(() => {
+      this.clearAlert();
+    }, 3000);
+  }
+
+  clearAlert() {
+    const currentAlert = document.querySelector(".alert");
+
+    if (currentAlert) {
+      currentAlert.remove();
+    }
+  }
+
+  clearFields() {
+    this.titleInput.value = "";
+    this.bodyInput.value = "";
   }
 }
 
