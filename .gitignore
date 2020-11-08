@@ -1,2 +1,7 @@
 node_modules
-build
+api
+assets
+src
+package-lock.json
+package.json
+webpack.config.js

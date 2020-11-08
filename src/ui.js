@@ -70,11 +70,15 @@ class UI {
     this.changeFormState('edit');
   }
 
+  clearIdInput() {
+    this.idInput.value = '';
+  }
+
   changeFormState(type) {
     if (type === 'edit') {
       this.postSubmit.textContent = 'Update Post'
       this.postSubmit.className = 'post-submit btn btn-warning btn-block'
-      
+      // Create cancel button
       const button = document.createElement('button');
       button.className = 'post-cancel btn btn-dark btn-block';
       button.appendChild(document.createTextNode('Cancel Edit'));
@@ -86,10 +90,11 @@ class UI {
       this.postSubmit.className = 'post-submit btn btn-primary btn-block'
 
       if (document.querySelector('.post-cancel')) {
-        document.querySelector('post-cancel').remove();
+        document.querySelector('.post-cancel').remove();
       }
 
       this.clearIdInput();
+      this.clearFields();
 
     }
   }

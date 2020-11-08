@@ -1,19 +1,19 @@
 {
   "posts": [
     {
-      "title": "Hello",
-      "body": "Been drinking the whole night feel like shit trying to do some coding",
-      "id": 4
+      "title": "This is post one",
+      "body": "Post one body",
+      "id": 1
     },
     {
       "title": "Post two",
-      "body": "Gavno zhopa pizda",
-      "id": 5
+      "body": "Post two body",
+      "id": 2
     },
     {
       "title": "Post three",
-      "body": "Hello my name is John Doe i am from New Zealand and i eat sushi",
-      "id": 6
+      "body": "Post three body",
+      "id": 3
     }
   ]
 }
